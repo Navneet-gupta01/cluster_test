@@ -133,6 +133,9 @@ defmodule ClusterConsul.Strategy do
     content_type = ''
     body = Poison.encode!(register_payload(name, port))
     request = {to_charlist(url), headers, content_type, body}
+    IO.puts "=============register==========="
+    IO.inspect request
+    IO.puts "=============register==========="
     :httpc.request(:put, request, [], [])
   end
 
