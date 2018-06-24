@@ -21,7 +21,7 @@ defmodule ClusterConsul.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:libcluster, "~> 2.5"},
+      {:libcluster, "~> 2.1"},
       {:ex_doc, "~> 0.12"},
     ]
   end
