@@ -143,9 +143,6 @@ defmodule ClusterConsul.Strategy do
   end
 
   def ip_to_node(ip, name) do
-    IO.puts "==========ip_to_node ip================="
-    IO.puts ip
-    IO.puts "==========ip_to_node ip================="
     [n, _] = node() |> to_string() |> String.split("@")
     :"#{name}@#{ip}"
   end
